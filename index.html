@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>Vahid Mazdeh</title>
+    <!-- stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/linkstyles.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/cs-select.css" />
+		<link rel="stylesheet" type="text/css" href="css/cs-skin-underline.css" />
+</head>
+
+<body>
+  <div class="container-fluid">
+  <section class="landing">
+    <div class="col-sm-6">
+      <h1 class="link link--kumya"><span data-letters="Vahid Mazdeh">Vahid Mazdeh</span></h1>
+      <div class="sub-header">
+        developer &middot; designer &#xb7; entrepreneur
+      </div>
+      <hr>
+      <p>Hi,</p>
+      <p>Maybe add a bit of description or welcome note? Nothin unnecessary. Keep it as simple as possible.</p>
+      <p>Add LinkedIn, GitHub, and Twitter buttons.</p>
+
+      </p>
+     </div>
+     <div class="col-sm-3 menu">
+      <select class="cs-select cs-skin-underline">
+        <option value="" disabled selected>Menu</option>
+        <option value="1">Bio</option>
+        <option value="2">Projects</option>
+        <option value="3">Contact</option>
+      </select>
+     </div>
+   </section>
+
+ </div> <!-- site container-fluid closed -->
+
+ <script src="js/classie.js"></script>
+ <script src="js/selectFx.js"></script>
+ <script>
+   (function() {
+     [].slice.call(document.querySelectorAll('select.cs-select')).forEach(function(el) {
+       new SelectFx(el);
+     });
+   })();
+ </script>
+
+</body>
+</html>
