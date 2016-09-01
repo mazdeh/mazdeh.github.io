@@ -2,50 +2,77 @@
 <head>
     <title>Vahid Mazdeh</title>
     <!-- stylesheets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
-    <link href="./css/bootstrap.css" rel="stylesheet">
-    <link href="./css/linkstyles.css" rel="stylesheet">
-    <link href="./css/styles.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/cs-select.css" />
-		<link rel="stylesheet" type="text/css" href="css/cs-skin-underline.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:700|Ubuntu:700" rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="container-fluid">
-  <section class="landing">
-    <div class="col-sm-6">
-      <h1 class="link link--kumya"><span data-letters="Vahid Mazdeh">Vahid Mazdeh</span></h1>
-      <div class="sub-header">
-        developer &middot; designer &#xb7; entrepreneur
-      </div>
-      <hr>
-      <p>Hi,</p>
-      <p>Maybe add a bit of description or welcome note? Nothin unnecessary. Keep it as simple as possible.</p>
-      <p>Add LinkedIn, GitHub, and Twitter buttons.</p>
+  <section>
+    <span class="header">
+      <span class="name">
+        <h1>Vahid Mazdeh</h1>
+        <div class="sub-header">
+          developer &middot; designer &#xb7; entrepreneur
+        </div>
+      </span>
+      <span class="link">
+        <a href="https://github.com/mazdeh">github</a>
+        <a href="https://linkedin.com/in/vahidmazdeh">linkedin</a>
+        <a href="https://twitter.com/vahidmazdeh">@vahidmazdeh</a>
+      </span>
+    </span>
+    <hr>
 
-      </p>
-     </div>
-     <div class="col-sm-3 menu">
-      <select class="cs-select cs-skin-underline">
-        <option value="" disabled selected>Menu</option>
-        <option value="1">Bio</option>
-        <option value="2">Projects</option>
-        <option value="3">Contact</option>
-      </select>
-     </div>
+    <div class="content">
+      <div class="segment">
+        <span class="liner" id="story"><div>Story</div><span class="section-line"></span></span>
+        <p>Vahid Mazdeh was born in Fort Collins, CO. while his dad was
+          getting his Ph.D. in Economics at Colorado State University.
+          He and his family moved back to Iran when he was around 3 years old.
+          He grew up in Tehran, Iran until he decided he wants to persue a life
+          of education and entrepenureship. So he moved to the states again,
+          back to --cordinates here--. His passion for Architecture at the time,
+        </p>
+      </div>
+
+      <div class="segment">
+        <span class="liner" id="education"><div>Education</div><span class="section-line"></span></span>
+        <ul>
+          <li>Masters of Science in Computer Science <small>2015</small></li>
+          <li>Bachelor of Design <small>2014</small></li>
+        </ul>
+      </div>
+
+      <div class="segment">
+        <span class="liner" id="career"><div>Career</div><span class="section-line"></span></span>
+        <ul>
+          <li>Software Developer at Four Winds Interactive <small>Currently</small></li>
+        </ul>
+      </div>
+
+      <div class="segment">
+        <span class="liner" id="projects"><div>Projects</div><span class="section-line"></span></span>
+        <ul>
+          <li>
+            <a href="www.outloud.io">Outloud</a>
+            <br><small>Listen to articles and stories read out loud by others, on the go, for free.</small>
+          </li>
+          <li>
+            <a href="#">Resound</a>
+            <br><small>A SoundCloud clone to help me learn React + Redux, Material Design principles, and much more.</small>
+          </li>
+        </ul>
+      </div>
+
+    </div> <!-- /content span -->
    </section>
 
- </div> <!-- site container-fluid closed -->
-
- <script src="js/classie.js"></script>
- <script src="js/selectFx.js"></script>
- <script>
-   (function() {
-     [].slice.call(document.querySelectorAll('select.cs-select')).forEach(function(el) {
-       new SelectFx(el);
-     });
-   })();
- </script>
+   <footer>
+     &middot; &middot; &middot; <br><br>
+     &copy; Vahid Mazdeh - 2016
+   </footer>
 
 </body>
 </html>

@@ -1,0 +1,143 @@
+html, body {
+  font-family: 'Inconsolata', 'monospace';
+  height: 100%;
+}
+
+section {
+  padding: 1 10 0 10;
+}
+
+h1 {
+  font-size: 2.2em;
+  margin: 0;
+}
+
+hr {
+  margin: 20 0 40 0;
+}
+
+small {
+  opacity: .5;
+}
+p {
+  line-height: 1.4em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+a:link {
+  color: black;
+}
+a:active {
+  color: black;
+}
+a:hover {
+  color: #C43A31;
+}
+
+.sub-header {
+  opacity: .6;
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+#story {
+  color: black;
+}
+#story > span {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+#education {
+  color: black;
+}
+#education > span {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+#career {
+  color: black;
+}
+#career > span {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+#projects {
+  color: black;
+}
+#projects > span {
+  background-color: rgba(0, 0, 0, .1);
+}
+.header {
+  margin: 30 0 0 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.name {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.link {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.segment {
+  margin-bottom: 70px;
+}
+
+.liner {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.section-line {
+  width: 100%;
+}
+.liner > div {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0 10 0 10;
+}
+
+footer {
+  font-size: .8em;
+  opacity: .5;
+  width: 100%;
+  text-align: center;
+  margin: 50 0 30 0;
+}
+
+/* for desktop */
+@media only screen and (min-width: 768px) {
+  ::selection {
+    background: #C43A31;
+  }
+  section {
+    height: 100vh;
+    padding: 10 100 0 100;
+  }
+
+  .link {
+    align-items: flex-end;
+  }
+
+  footer {
+    margin-top: 200px;
+  }
+}
