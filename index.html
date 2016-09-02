@@ -4,30 +4,31 @@
     <!-- stylesheets -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:700|Ubuntu:700" rel="stylesheet">
     <link href="./styles.css" rel="stylesheet">
 </head>
 
 <body>
   <section>
-    <span class="header">
+    <header>
       <span class="name">
         <h1>Vahid Mazdeh</h1>
         <div class="sub-header">
-          developer &middot; designer &#xb7; entrepreneur
+          developer &middot; designer &middot; entrepreneur
         </div>
       </span>
       <span class="link">
-        <a href="https://github.com/mazdeh">github</a>
-        <a href="https://linkedin.com/in/vahidmazdeh">linkedin</a>
-        <a href="https://twitter.com/vahidmazdeh">@vahidmazdeh</a>
+        <!-- write an npm module for daily contributions -->
+        <span><small>10 contributions today - </small><a href="https://github.com/mazdeh" target="_blank">github</a></span>
+        <a href="https://linkedin.com/in/vahidmazdeh" target="_blank">linkedin</a>
+        <a href="https://twitter.com/vahidmazdeh" target="_blank">@vahidmazdeh</a>
       </span>
-    </span>
+    </header>
     <hr>
 
     <div class="content">
-      <div class="segment">
-        <span class="liner" id="story"><div>Story</div><span class="section-line"></span></span>
+      <div class="card">
+        <!-- <span class="liner" id="story"><div>Story</div><span class="section-line"></span></span> -->
+        <span class="cursor"></span><span>story</span>
         <p>Vahid Mazdeh was born in Fort Collins, CO. while his dad was
           getting his Ph.D. in Economics at Colorado State University.
           He and his family moved back to Iran when he was around 3 years old.
@@ -37,23 +38,26 @@
         </p>
       </div>
 
-      <div class="segment">
-        <span class="liner" id="education"><div>Education</div><span class="section-line"></span></span>
+      <div class="card">
+        <!-- <span class="liner" id="education"><div>Education</div><span class="section-line"></span></span> -->
+        <span class="cursor"></span><span>education</span>
         <ul>
-          <li>Masters of Science in Computer Science <small>2015</small></li>
-          <li>Bachelor of Design <small>2014</small></li>
+          <li>Masters of Science in Computer Science <small> &middot; 2015</small></li>
+          <li>Bachelor of Design <small> &middot; 2014</small></li>
         </ul>
       </div>
 
-      <div class="segment">
-        <span class="liner" id="career"><div>Career</div><span class="section-line"></span></span>
+      <div class="card">
+        <!-- <span class="liner" id="career"><div>Career</div><span class="section-line"></span></span> -->
+        <span class="cursor"></span><span>career</span>
         <ul>
-          <li>Software Developer at Four Winds Interactive <small>Currently</small></li>
+          <li>Software Developer @ Four Winds Interactive <small> &middot; Currently</small></li>
         </ul>
       </div>
 
-      <div class="segment">
-        <span class="liner" id="projects"><div>Projects</div><span class="section-line"></span></span>
+      <div class="card">
+        <!-- <span class="liner" id="projects"><div>Projects</div><span class="section-line"></span></span> -->
+        <span class="cursor"></span><span>projects</span>
         <ul>
           <li>
             <a href="www.outloud.io">Outloud</a>
@@ -75,4 +79,23 @@
    </footer>
 
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+  var gitUrl = "https://github.com/users/mazdeh";
+  fetch('http://github.com')
+    .then(function(response) {
+      console.log(response);
+    })
+
+  // $.get(gitUrl, function(data) {
+  //   console.log('data');
+  // })
+  // $.ajax({
+  //   url: gitUrl,
+  //   dataType: 'text',
+  //   success: function(data) {
+  //     console.log(data);
+  //   }
+  // })
+</script>
 </html>

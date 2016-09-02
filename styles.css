@@ -1,8 +1,24 @@
 html, body {
   font-family: 'Inconsolata', 'monospace';
   height: 100%;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: black;
+  color: white;
 }
 
+header {
+  margin: 30 0 0 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.sub-header {
+  opacity: .6;
+  margin-top: 10px;
+  font-size: 1em;
+}
 section {
   padding: 1 10 0 10;
 }
@@ -11,7 +27,13 @@ h1 {
   font-size: 2.2em;
   margin: 0;
 }
-
+h2 {
+  /*background-color: #C43A31;*/
+  color: black;
+  opacity: .7;
+  padding: 3 3 0 5;
+  margin-bottom: 1px;
+}
 hr {
   margin: 20 0 40 0;
 }
@@ -25,32 +47,31 @@ p {
 
 ul {
   list-style-type: none;
+  padding-left: 15px;
 }
-
 li {
   margin-top: 10px;
 }
 
 a {
   text-decoration: none;
+  padding: 2px;
 }
 a:link {
-  color: black;
+  color: white;
 }
 a:active {
   color: black;
 }
+a:visited {
+  color: white;
+}
 a:hover {
-  color: #C43A31;
+  background: #9B0707;
+  color: white;
 }
 
-.sub-header {
-  opacity: .6;
-  margin-top: 10px;
-  font-size: 1em;
-}
-
-#story {
+/*#story {
   color: black;
 }
 #story > span {
@@ -76,44 +97,52 @@ a:hover {
 }
 #projects > span {
   background-color: rgba(0, 0, 0, .1);
-}
-.header {
-  margin: 30 0 0 0;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
+}*/
 
 .name {
   display: flex;
   flex-flow: column nowrap;
+  justify-content: center;
 }
 
 .link {
   display: flex;
   flex-flow: column wrap;
-  align-items: flex-start;
-  margin-top: 10px;
+  align-items: flex-end;
+  flex-basis: 100%;
+  margin-top: 30px;
 }
 
-.segment {
-  margin-bottom: 70px;
+.card {
+  margin-bottom: 50px;
 }
 
-.liner {
+.card > span {
+  background-color: white;
+  padding: 0 2 2 2;
+  color: black;
+  /*font-weight: bold;*/
+}
+
+.cursor{
+  background-color: white;
+  margin-right: 3px;
+}
+
+/*.liner {
   display: flex;
   flex-flow: row nowrap;
 }
 .section-line {
   width: 100%;
-}
-.liner > div {
+}*/
+/*.liner > div {
   font-family: 'Ubuntu', sans-serif;
   font-size: 1.2em;
   text-transform: uppercase;
   font-weight: bold;
   margin: 0 10 0 10;
-}
+}*/
 
 footer {
   font-size: .8em;
@@ -134,10 +163,11 @@ footer {
   }
 
   .link {
+    flex-basis: inherit;
     align-items: flex-end;
   }
 
   footer {
-    margin-top: 200px;
+    margin-top: 100px;
   }
 }
