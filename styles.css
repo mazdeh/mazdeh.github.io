@@ -1,7 +1,6 @@
 html, body {
   font-family: 'Inconsolata', 'monospace';
   height: 100%;
-  display: flex;
   min-height: 100vh;
   flex-direction: column;
   background-color: black;
@@ -20,7 +19,7 @@ header {
   font-size: 1em;
 }
 section {
-  padding: 1 10 0 10;
+  padding: 10 20 0 20;
 }
 
 h1 {
@@ -146,10 +145,11 @@ a:hover {
 
 footer {
   font-size: .8em;
-  opacity: .5;
+  opacity: .2;
+  height: 50px;
   width: 100%;
   text-align: center;
-  margin: 50 0 30 0;
+  margin: 100 0 50 0;
 }
 
 /* for desktop */
@@ -158,7 +158,7 @@ footer {
     background: #C43A31;
   }
   section {
-    height: 100vh;
+    /*height: 100vh;*/
     padding: 10 100 0 100;
   }
 
@@ -169,5 +169,6 @@ footer {
 
   footer {
     margin-top: 100px;
+    margin-bottom: 20px;
   }
 }
