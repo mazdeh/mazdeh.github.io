@@ -42,11 +42,12 @@ small {
 }
 p {
   line-height: 1.4em;
+  padding-left: 30px;
 }
 
 ul {
   list-style-type: none;
-  padding-left: 15px;
+  padding-left: 30px;
 }
 li {
   margin-top: 10px;
@@ -69,34 +70,6 @@ a:hover {
   background: #9B0707;
   color: white;
 }
-
-/*#story {
-  color: black;
-}
-#story > span {
-  background-color: rgba(0, 0, 0, .1);
-}
-
-#education {
-  color: black;
-}
-#education > span {
-  background-color: rgba(0, 0, 0, .1);
-}
-
-#career {
-  color: black;
-}
-#career > span {
-  background-color: rgba(0, 0, 0, .1);
-}
-
-#projects {
-  color: black;
-}
-#projects > span {
-  background-color: rgba(0, 0, 0, .1);
-}*/
 
 .name {
   display: flex;
@@ -126,21 +99,6 @@ a:hover {
 .cursor{
   background-color: white;
   margin-right: 3px;
-}
-
-.liner {
-  display: flex;
-  flex-flow: row nowrap;
-}
-.section-line {
-  width: 100%;
-}
-.liner > div {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 1.2em;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin: 0 10 0 10;
 }
 
 footer {
