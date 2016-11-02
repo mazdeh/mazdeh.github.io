@@ -120,7 +120,7 @@ a:hover {
   background-color: white;
   padding: 0 2 2 2;
   color: black;
-  /*font-weight: bold;*/
+  font-weight: bold;
 }
 
 .cursor{
@@ -128,20 +128,20 @@ a:hover {
   margin-right: 3px;
 }
 
-/*.liner {
+.liner {
   display: flex;
   flex-flow: row nowrap;
 }
 .section-line {
   width: 100%;
-}*/
-/*.liner > div {
+}
+.liner > div {
   font-family: 'Ubuntu', sans-serif;
   font-size: 1.2em;
   text-transform: uppercase;
   font-weight: bold;
   margin: 0 10 0 10;
-}*/
+}
 
 footer {
   font-size: .8em;
