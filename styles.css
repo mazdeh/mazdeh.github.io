@@ -42,12 +42,11 @@ small {
 }
 p {
   line-height: 1.3em;
-  padding-left: 30px;
 }
 
 ul {
   list-style-type: none;
-  padding-left: 30px;
+  padding-left: 0;
 }
 li {
   margin-top: 10px;
@@ -87,7 +86,6 @@ a:hover {
 
 .card {
   margin-bottom: 50px;
-
 }
 
 .card > span {
@@ -124,6 +122,14 @@ footer {
   .link {
     flex-basis: inherit;
     align-items: flex-end;
+  }
+
+  ul {
+    padding-left: 30px;
+  }
+
+  p {
+    padding-left: 30px;
   }
 
   footer {
