@@ -39,6 +39,7 @@ hr {
 
 small {
   opacity: .5;
+  font-weight: normal;
 }
 p {
   line-height: 1.3em;
@@ -48,8 +49,13 @@ ul {
   list-style-type: none;
   padding-left: 0;
 }
+
 li {
   margin-top: 10px;
+}
+
+li > p {
+  margin-top: 5px;
 }
 
 a {
@@ -100,6 +106,19 @@ a:hover {
   margin-right: 3px;
 }
 
+.list-item-parent {
+}
+
+.list-item-bullet {
+  display: list-item;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.italics {
+  font-style: italic;
+}
+
 footer {
   font-size: .8em;
   opacity: .4;
@@ -123,6 +142,10 @@ footer {
   .link {
     flex-basis: inherit;
     align-items: flex-end;
+  }
+
+  .list-item-bullet {
+    padding-right: 100px;
   }
 
   ul {
